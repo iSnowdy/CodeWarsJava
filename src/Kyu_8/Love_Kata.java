@@ -1,3 +1,5 @@
+package Kyu_8;
+
 import java.util.Arrays;
 
 public class Love_Kata {
@@ -30,8 +32,8 @@ public class Love_Kata {
                 String[] arr ={"not at all", "I love you",  "a little", "a lot", "passionately", "madly"};
 
                 return arr[nb_petals%6];
-    }
-}
+            }
+        }
 
          */
 
