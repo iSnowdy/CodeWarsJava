@@ -1,3 +1,5 @@
+package Kyu_8;
+
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -18,7 +20,7 @@ public class Sheep{
 
         else {
             sheep_danger_position = Sheeps_Wolf.length - (wolf_position + 1);
-            System.out.print("Oi! Sheep number " + sheep_danger_position + "! You are about to be eaten by a wolf!");
+            System.out.print("Oi! Kyu_8.Sheep number " + sheep_danger_position + "! You are about to be eaten by a wolf!");
 
         }
     }
@@ -26,18 +28,18 @@ public class Sheep{
 
 /*
 
-Cleaner way of doing it
+    Cleaner way of doing it
 
-import java.util.*;
+    import java.util.*;
 
-public class ZywOo {
+    public class ZywOo {
 
-  public static String warnTheSheep(String[] array) {
-    Collections.reverse(Arrays.asList(array));
-    int pos = Arrays.asList(array).indexOf("wolf");
-    return pos == 0 ? "Pls go away and stop eating my sheep" : "Oi! Sheep number " + pos + "! You are about to be eaten by a wolf!";
-  }
+        public static String warnTheSheep(String[] array) {
+            Collections.reverse(Arrays.asList(array));
+            int pos = Arrays.asList(array).indexOf("wolf");
+            return pos == 0 ? "Pls go away and stop eating my sheep" : "Oi! Kyu_8.Sheep number " + pos + "! You are about to be eaten by a wolf!";
+        }
 
-}
+    }
 
 */

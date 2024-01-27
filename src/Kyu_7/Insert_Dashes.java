@@ -1,3 +1,5 @@
+package Kyu_7;
+
 public class Insert_Dashes {
     public static void main(String[] args) {
 

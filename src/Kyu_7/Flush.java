@@ -1,3 +1,5 @@
+package Kyu_7;
+
 public class Flush {
 
     public static boolean isFlush(String[] cards) {

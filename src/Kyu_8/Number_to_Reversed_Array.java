@@ -1,6 +1,8 @@
+package Kyu_8;
+
 import java.util.Arrays;
 
-public class Reversed {
+public class Number_to_Reversed_Array {
     public static void main(String[] args) {
 
         int n = 35231;

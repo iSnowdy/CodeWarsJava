@@ -1,3 +1,5 @@
+package Kyu_8;
+
 import java.util.Arrays;
 
 public class Merge_Order_Duplicate {

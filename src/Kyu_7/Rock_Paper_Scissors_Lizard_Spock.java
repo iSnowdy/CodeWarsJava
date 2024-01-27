@@ -1,3 +1,5 @@
+package Kyu_7;
+
 public class Rock_Paper_Scissors_Lizard_Spock {
     public static void main(String[] args) {
 

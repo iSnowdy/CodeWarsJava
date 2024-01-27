@@ -1,6 +1,8 @@
+package Kyu_8;
+
 import java.util.Arrays;
 
-public class Bob_Gravity {
+public class Gravity_Flip {
 
     public static void main(String[] args) {
         // Example usage
