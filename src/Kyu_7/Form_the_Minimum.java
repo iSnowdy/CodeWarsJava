@@ -2,7 +2,7 @@ package Kyu_7;
 
 import java.util.Arrays;
 
-public class Form_The_Minimum {
+public class Form_the_Minimum {
     public static void main(String[] args) {
 
         int[] values = {6, 7, 8, 7, 6, 6};
