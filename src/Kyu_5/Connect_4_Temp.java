@@ -98,7 +98,7 @@ public class Connect_4_Temp { // Main
     }
 
     private boolean checkDiagonal() {
-        for (int row = 0; row < 3; row++) {
+        for (int row = 0; row < 3; row++) { // Bottom left ---> Top right
             for (int col = 0; col < 4; col++) {
                 if (    table[row][col] == currentPlayer &&
                         table[row + 1][col + 1] == currentPlayer &&
@@ -110,7 +110,7 @@ public class Connect_4_Temp { // Main
                 }
             }
         }
-        for (int row = 0; row < 3; row++) {
+        for (int row = 0; row < 3; row++) { // Bottom right --> Top left
             for (int col = 3; col < 7; col++) {
                 if (    table[row][col] == currentPlayer &&
                         table[row + 1][col - 1] == currentPlayer &&
