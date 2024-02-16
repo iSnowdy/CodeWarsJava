@@ -1,6 +1,6 @@
 package Kyu_8;
 
-public class Reserved_Strings {
+public class Reversed_Strings {
     public static void main (String[] args) {
 
         String str = "world";
