@@ -11,5 +11,20 @@ public class Main {
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
             System.out.println("i = " + i);
         }
+
+        String keyStr = String.valueOf(key);
+        int[] digits = new int[keyStr.length()];
+        for (int i = 0; i < keyStr.length(); i++) {
+            digits[i] = Character.getNumericValue(keyStr.charAt(i));
+        }
+        
+        int[] encoded = new int[str.length()];
+        for (int i = 0; i < str.length(); i++) {
+            int letterNum = letterToNumber.get(str.charAt(i));
+            int keyDigit = digits[i % digits.length];
+            encoded[i] = letterNum + keyDigit;
+        }
+        
+        return encoded;
     }
 }
