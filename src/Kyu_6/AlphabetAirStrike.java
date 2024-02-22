@@ -1,28 +1,26 @@
-package Kyu_7;
+package Kyu_6;
+import java.util.*;
+import java.util.regex.*;
 
-import java.util.HashMap;
-import java.util.Map;
 
-public class AlphabetWar {
-    public static String alphabetWar(String fight) {
+public class AlphabetAirStrike {
+    public static String alphabetWar(String fight){
 
+        String left = "wpbs";
+        String right = "mqdz";
         Map<Character, Integer> leftSidePowers = new HashMap<>();
-
-        leftSidePowers.put('w', 4);
-        leftSidePowers.put('p', 3);
-        leftSidePowers.put('b', 2);
-        leftSidePowers.put('s', 1);
-
         Map<Character, Integer> rightSidePowers = new HashMap<>();
-
-        rightSidePowers.put('m', 4);
-        rightSidePowers.put('q', 3);
-        rightSidePowers.put('d', 2);
-        rightSidePowers.put('z', 1);
-
-        System.out.println(rightSidePowers.getClass() + " ");
-
         int score = 0;
+
+        for (int i = 0; i < left.length(); i ++) {
+            leftSidePowers.put(left.charAt(i), left.length() - i);
+        }
+
+        for (int j = 0; j < right.length(); j ++) {
+            rightSidePowers.put(right.charAt(j), right.length() - j);
+        }
+
+        System.out.println(fight + "result");
 
         for (char c : fight.toCharArray()) {
             if (leftSidePowers.containsKey(c)) {
@@ -32,14 +30,17 @@ public class AlphabetWar {
                 score -= rightSidePowers.get(c);
             }
         }
+
+        System.out.println(score);
         return score > 0 ? "Left side wins!" : score < 0 ? "Right side wins!" : "Let's fight again!";
     }
 
     public static void main (String[] args) {
 
-        String fight = "zdqmwpbs";
+        String fight = "zd*qm*wp*bs";
 
         alphabetWar(fight);
 
     }
+
 }

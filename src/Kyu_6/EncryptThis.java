@@ -14,20 +14,22 @@ public class EncryptThis {
         for (String word : textArray) {
             int numberASCII = word.charAt(0);
             reversedWord.append(numberASCII);
+            // System.out.println(reversedWord);
 
             if (word.length() > 1) { // Len = 1 no encryption needed
                 if (word.length() > 2) { // Only 2 chars no needed either (ASCII + char)
                     String building = word.charAt(word.length() - 1) +
-                            word.substring(2, word.length() - 1) +
-                            word.charAt(1); // Last + from 2 to second last + second
+                                      word.substring(2, word.length() - 1) +
+                                      word.charAt(1); // Last + from 2 to second last (rest of the String) + second
+
                     reversedWord.append(building);
-                } else {
+                }
+                else {
                     reversedWord.append(word.charAt(1));
                 }
             }
             reversedWord.append(" ");
         }
-
         System.out.println(reversedWord);
         return reversedWord.toString().trim();
     }
