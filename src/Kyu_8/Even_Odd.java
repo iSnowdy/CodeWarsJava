@@ -7,7 +7,8 @@ public class Even_Odd {
 
         String result;
 
-        result =  (number % 2) == 0 ? "Even" : "Odd"; // Question that if its "Yes" returns the first print. Otherwise the second one ( ... : ...)
+        result =  (number % 2) == 0 ? "Even" : "Odd";
+        // Question that if its "Yes" returns the first print. Otherwise the second one ( ... : ...)
 
         System.out.println(result);
 
