@@ -3,7 +3,7 @@ package Kyu_7;
 public class Name_that_Number {
     public static void main (String[] args) {
 
-        int x = 19;
+        int x = 54;
 
         String result = "";
         String toString = String.valueOf(x);
