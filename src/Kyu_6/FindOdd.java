@@ -1,13 +1,18 @@
 package Kyu_6;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class FindOdd {
     public static int findIt(int[] a) {
+        Map<Integer, Integer> countMap = new HashMap<>();
 
-        int result = 0;
-        for (int num : a) {
-            result ^= num;
+        for (int num : a) countMap.put(num, countMap.getOrDefault(num, 0) + 1);
+
+        for (int mapKey : countMap.keySet()) {
+            if (countMap.get(mapKey) % 2 != 0) return mapKey;
         }
-        return result;
+        return 0;
     }
 
     public static void main(String[] args) {
